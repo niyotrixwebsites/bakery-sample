@@ -938,7 +938,7 @@ function setupEventForm() {
     if (success) success.textContent = 'Your event request has been received. The bakery will contact you soon.';
     setTimeout(() => { if (success) success.textContent = ''; }, 5000);
 
-    if (window.location.pathname.endsWith('/sunshine86admin.html')) return;
+    if (window.location.pathname.endsWith('/adminpannel.html') || window.location.pathname.endsWith('/adminipannel.html')) return;
   });
 }
 
@@ -1351,8 +1351,10 @@ function loadEventList() {
 
 // Initialize based on page
 (async () => {
-  const isAdminPage = window.location.pathname.endsWith('sunshine86admin.html') ||
-    window.location.pathname.endsWith('/sunshine86admin.html') ||
+  const isAdminPage = window.location.pathname.endsWith('adminpannel.html') ||
+    window.location.pathname.endsWith('/adminpannel.html') ||
+    window.location.pathname.endsWith('adminipannel.html') ||
+    window.location.pathname.endsWith('/adminipannel.html') ||
     window.location.pathname.endsWith('admin.html');
 
   if (isAdminPage) {
