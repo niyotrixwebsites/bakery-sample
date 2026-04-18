@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sunshine-bakery-9bda9.web.app/sitemap.xml
